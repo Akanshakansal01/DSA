@@ -1,6 +1,6 @@
 public class Merge_Sort {
     public static void main(String[] args) {
-        int[] arr={2,3,1,4,5,8,-11};
+        int[] arr={2,3,1,4,5,8,-11,-9,-89};
         int[] ans = mSort(arr, 0, arr.length - 1);
         for (int i = 0; i < ans.length; i++)
         {
