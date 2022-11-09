@@ -9,20 +9,15 @@ public class Random_Quick_Sort {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
-
     }
-
     public static void QuickSort(int[] arr, int lo, int hi) {
         if (lo >= hi) {
             return;
         }
-
         int idx = Partition(arr, lo, hi);
         QuickSort(arr, lo, idx - 1);
         QuickSort(arr, idx + 1, hi);
-
     }
-
     public static int Partition(int[] arr, int lo, int hi) {
         Random_number(arr, lo, hi);
         int pivot = arr[hi];
@@ -36,19 +31,15 @@ public class Random_Quick_Sort {
                 arr[idx] = t;
                 idx++;
             }
-
         }
         // idx hi
-
         int t = arr[idx];
         arr[idx] = arr[hi];
         arr[hi] = t;
         return idx;
-
     }
-
-    public static void Random_number(int[] arr, int si, int ei) {
-
+    public static void Random_number(int[] arr, int si, int ei)
+    {
         Random rand = new Random();
         int lo = si;
         int hi = ei;
