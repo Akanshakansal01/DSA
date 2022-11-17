@@ -5,7 +5,8 @@ public class Student {
     int age = 9;
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return this.name + " " + this.age;
     }
 }
