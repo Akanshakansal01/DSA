@@ -1,7 +1,7 @@
 package Stack;
 //  Stack -->  LIFO (last in first out) or FILO (first in last out)
 public class StackDemo {
-    private int arr[];
+    protected int arr[];
     private int top;
 
     public StackDemo() {
