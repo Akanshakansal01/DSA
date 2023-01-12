@@ -114,5 +114,21 @@ public class Binary_Tree {
         InOrder(nn.right);
     }
 
+    public boolean Search(int item)
+    {
+        return Search(root, item);
+    }
+    private boolean Search(Node nn, int item)
+    {
+        if (nn == null) {
+            return false;
+        }
+        if (nn.val == item) {
+            return true;
+        }
+        boolean left = Search(nn.left, item);
+        boolean right = Search(nn.right, item);
+        return left || right;
+    }
 
 }

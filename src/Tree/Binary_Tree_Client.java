@@ -15,5 +15,8 @@ public class Binary_Tree_Client {
         bt.PreOrder();   //  10 20 40 50 30 60 70
         bt.PostOrder();  //  40 50 20 70 60 30 10
         bt.InOrder();   //   40 20 50 10 30 70 60
+        System.out.println(bt.Search(60));  // true
+        System.out.println(bt.Search(-60));  // false
+
     }
 }
