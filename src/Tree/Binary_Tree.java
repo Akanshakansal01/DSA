@@ -146,6 +146,19 @@ public class Binary_Tree {
         return Math.max(left,Math.max(right,node.val));
     }
 
-
+    public int height()
+    {
+        return height(this.root);
+    }
+    private int height(Node node)
+    {
+        if (node == null)
+        {
+            return -1;
+        }
+        int left = height(node.left);
+        int right = height(node.right);
+        return Math.max(left, right) + 1;
+    }
 
 }

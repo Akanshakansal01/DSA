@@ -18,5 +18,6 @@ public class Binary_Tree_Client {
         System.out.println(bt.Search(60));  // true
         System.out.println(bt.Search(-60));  // false
         System.out.println(bt.Max());   // 70
+        System.out.println(bt.height());  // 3
     }
 }
