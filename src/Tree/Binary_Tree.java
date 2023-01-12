@@ -131,4 +131,21 @@ public class Binary_Tree {
         return left || right;
     }
 
+    public int Max()
+    {
+        return Max(root);
+    }
+    private int Max(Node node)
+    {
+        if(node ==null)
+        {
+            return Integer.MIN_VALUE;
+        }
+        int left=Max(node.left);
+        int right= Max(node.right);
+        return Math.max(left,Math.max(right,node.val));
+    }
+
+
+
 }

@@ -17,6 +17,6 @@ public class Binary_Tree_Client {
         bt.InOrder();   //   40 20 50 10 30 70 60
         System.out.println(bt.Search(60));  // true
         System.out.println(bt.Search(-60));  // false
-
+        System.out.println(bt.Max());   // 70
     }
 }
