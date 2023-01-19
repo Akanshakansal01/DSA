@@ -19,15 +19,16 @@ public class Diameter_Of_Binary_Tree {
             {
                 return 0;
             }
-            int leftDiameter= diameterOfBinaryTree(root.left);
+            int leftDiameter = diameterOfBinaryTree(root.left);
             int rightDiameter = diameterOfBinaryTree(root.right);
-            int sd=height(root.left)+height(root.right)+2;
-            return Math.max(leftDiameter,Math.max(rightDiameter,sd));
+            int sumDiameter = height(root.left)+height(root.right)+2;
+            return Math.max(leftDiameter,Math.max(rightDiameter,sumDiameter));  // maximum of these three diameter is the answer
         }
         public int height(TreeNode root)
         {
-            if(root==null)
+            if(root==null) {
                 return -1;
+            }
             int leftHeight=height(root.left);
             int rightHeight=height(root.right);
             return Math.max(leftHeight,rightHeight)+1;
