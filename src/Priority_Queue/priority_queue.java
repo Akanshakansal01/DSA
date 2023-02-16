@@ -14,6 +14,7 @@ public class priority_queue {
 //           (3)19  27(4) (5)23  21(6)    (ci=child index)
 //             /  \
 //        (7)36    120(8)
+
 //Why Heap:
 //                      Sorted Array     Unsorted Array      Heap
 // Add element           O(n)               O(1)            log(n)
