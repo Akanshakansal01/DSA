@@ -90,7 +90,7 @@ public class Build_Binary_Expression_Tree_Infix_Expression {
             return nn;
         }
     }
-    public String GetPotfix(String s)
+    public String GetPostfix(String s)
     {
         StringBuilder sb= new StringBuilder();
         Stack<Character> st= new Stack<>();
