@@ -31,6 +31,11 @@ public class Graph_Client {
 //        6-> {5=4, 7=3}
 //        7-> {5=2, 6=3}
         System.out.println(g.hashpath(1, 6, new HashSet<>()));  // false
-        g.printallpath(1,  6, new HashSet<>(), "");
+//        g.printallpath(1,  6, new HashSet<>(), "");
+        System.out.println(g.BFS(1,6));
+        System.out.println(g.DFS(1,6));
+        g.DFT();
+        System.out.println();
+        g.BFT();
     }
 }
