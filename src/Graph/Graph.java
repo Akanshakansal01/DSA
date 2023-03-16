@@ -73,4 +73,17 @@ public class Graph {
         return false;
     }
 
+    public void printallpath(int src, int des, HashSet<Integer> visited, String ans) {
+        if (src == des) {
+            System.out.println(ans+src);
+            return;
+        }
+        visited.add(src);
+        for (int nbrs : map.get(src).keySet()) {
+            if (!visited.contains(nbrs)) {
+                printallpath(nbrs, des, visited, ans + src + "----");
+            }
+        }
+        visited.remove(src);
+    }
 }

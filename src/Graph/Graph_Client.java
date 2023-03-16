@@ -13,7 +13,7 @@ public class Graph_Client {
         g.AddEdge(5, 6, 4);
         g.AddEdge(7, 5, 2);
         g.AddEdge(6, 7, 3);
-        g.display();
+//        g.display();
 //        1-> {2=10, 4=6}
 //        2-> {1=10, 3=7}
 //        3-> {2=7, 4=5}
@@ -21,9 +21,9 @@ public class Graph_Client {
 //        5-> {4=1, 6=4, 7=2}
 //        6-> {5=4, 7=3}
 //        7-> {5=2, 6=3}
-        g.removevertex(4);
-        System.out.println();
-        g.display();
+//        g.removevertex(4);
+//        System.out.println();
+//        g.display();
 //        1-> {2=10}
 //        2-> {1=10, 3=7}
 //        3-> {2=7}
@@ -31,6 +31,6 @@ public class Graph_Client {
 //        6-> {5=4, 7=3}
 //        7-> {5=2, 6=3}
         System.out.println(g.hashpath(1, 6, new HashSet<>()));  // false
-//        g.printallpath(1,  6, new HashSet<>(), "");
+        g.printallpath(1,  6, new HashSet<>(), "");
     }
 }
