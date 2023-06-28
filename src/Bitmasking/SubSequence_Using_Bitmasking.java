@@ -4,6 +4,7 @@ public class SubSequence_Using_Bitmasking {
     public static void main(String[] args) {
         String str="abc";
         SubSequence(str);
+
     }
     public static void SubSequence(String str){
         int n=str.length();
