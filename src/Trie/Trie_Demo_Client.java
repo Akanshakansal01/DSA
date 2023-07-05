@@ -11,7 +11,7 @@ public class Trie_Demo_Client {
         t.insert("ankit");
         t.insert("ankita");
         t.insert("amisha");
-        t.startsWith("app");
-        t.search("rajesh");
+        System.out.println(t.startsWith("app"));
+        System.out.println(t.search("rajesh"));
     }
 }
