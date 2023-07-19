@@ -34,9 +34,7 @@ public class Recovery_Binary_Search_Tree_Space_Optimize {
                 if(first== null){
                     first=prev;
                 }
-                else{
                     second=root;
-                }
             }
             prev=root;
             Inorder(root.right);
